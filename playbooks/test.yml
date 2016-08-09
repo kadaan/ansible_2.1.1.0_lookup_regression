@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+
+  tasks:
+    - debug: msg="{{ lookup('lookup', 'lookup1') }}"
+    - debug: msg="{{ lookup('lookup', 'lookup2') }}"
